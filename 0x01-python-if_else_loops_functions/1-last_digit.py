@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 
 print("Last digit of", number, "is", str(abs(number))[-1], end= " ")
 
-last_digit = int(abs(str(number))[-1])
+last_digit = int(str(abs(number))[-1])
 
 if last_digit > 5:
     print('and is greater than 5')
