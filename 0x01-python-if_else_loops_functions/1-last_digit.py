@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-print(" Last digit of", number, "is", str(number)[-1], end = " ")
+print("Last digit of", number, "is", str(number)[-1], end = " ")
 
 last_digit = int(str(number)[-1])
 
