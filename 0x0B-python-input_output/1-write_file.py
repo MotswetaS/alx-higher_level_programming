@@ -6,4 +6,4 @@ def write_file(filename="", text=""):
     """We are returning number of characters written"""
 
     with open(text, encoding="utf-8") as f:
-        print(f.write(), end="")
+        return f.write(text)
