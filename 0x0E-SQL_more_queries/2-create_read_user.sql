@@ -2,6 +2,7 @@
 -- user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
 -- The user_0d_2 password should be set to user_0d_2_pwd
 -- If the database hbtn_0d_2 already exists, your script should not fail
--- If the user user_0d_2 already exists, your script should not fail
-CREATE A DDATABASE IF NOT EXISTS hbtn_0d_2;
-GRANT SELECT ON hbtn_0d_2.* To user_0d_2@localhost
+-- If the user user_0d_2 already exists, your script should not fail:wq
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+CREATE USER IF NOT EXISTS user_0d_2@localhost IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT ON hbtn_0d_2.* TO user_0d_2@localhost;
